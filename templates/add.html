@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add data</title>
+</head>
+<body>
+	<button onclick="window.location.href='index'"> HOME </button>
+	<h1> Add new records here</h1>
+	<form method = 'Post' >
+		{{ form.csrf_token }}
+		{{form.id.label}}
+		{{form.id}}
+	</br>
+	</br>
+		{{form.description.label}}
+		{{form.description}}
+	</br>
+	</br>	
+		{{form.datetime.label}}
+		{{form.datetime}}
+	</br>
+	</br>
+		{{form.Longitude.label}}
+		{{form.Longitude}}
+	</br>
+	</br>
+		{{form.Latitude.label}}
+		{{form.Latitude}}
+	</br>
+	</br>
+		{{form.Elevation.label}}
+		{{form.Elevation}}
+	</br>
+	</br>
+		{{form.Submit}}
+	</form>
+
+</body>
+</html>

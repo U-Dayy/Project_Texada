@@ -1,0 +1,29 @@
+<html>
+
+<body>
+	<button onclick="window.location.href='add'"> Add records </button>
+	<button onclick="window.location.href='update'"> Update records </button>
+	<button onclick="window.location.href='deleteR'"> Delete records </button>
+	
+	<table style="width:100%">
+		<th>ID</th>
+		<th>Description</th>
+		<th>Datetime</th>
+		<th>Longitute</th>
+		<th>Latitude</th>
+		<th>Elevation</th>
+		{%for value in data %}
+	  <tr>
+	    <td>{{value[0]}}</td>
+	    <td>{{value[1]}}</td>
+	    <td>{{value[2]}}</td>
+	    <td>{{value[3]}}</td>
+	    <td>{{value[4]}}</td>
+	    <td>{{value[5]}}</td>
+	  </tr>
+	  {% endfor %}
+	</table>
+</body>
+
+
+</html>
